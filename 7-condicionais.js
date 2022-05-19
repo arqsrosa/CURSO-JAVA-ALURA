@@ -5,14 +5,13 @@ const listaDeDestinos= new Array(
     `Rio de Janeiro`,
 );
 
-const idadeDoComprador = 15;
+const idadeComprador = 21;
 console.log("Destinos possiveis:");
 console.log(listaDeDestinos);
 
-//para usa a condicional se --- usamos if no java
-if(maiordeidade){
+if(idadeComprador >= 18){
+    console.log("Comprador maior de idade");
     listaDeDestinos.splice(1,1);
 }
-
-
+console.log("Comprador não é maior de idade não posso vender")
 console.log(listaDeDestinos);
